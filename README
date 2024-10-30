@@ -1,0 +1,40 @@
+Blackjack Solitaire Game
+I worked alone.
+
+Description
+This is a Java implementation of a card game called Blackjack Solitaire. The game involves drawing cards from a deck and placing them into a grid of 16 scoring spots. The goal is to maximize your score by creating the best possible hands, both horizontally and vertically.
+
+The game is played with a standard deck of 52 cards, and players can either place the drawn card into an empty grid spot or discard it. The game ends when all 16 spots are filled or when the deck is exhausted.
+
+How to Play
+1. Run the game using the BlackjackSolitaireRunner class.
+2. The game will draw a card from the shuffled deck.
+3. The player is prompted to either:
+   - Enter a position (1-16) to place the card into an empty grid spot, or
+   - Enter 0 to discard the card (up to 4 discards allowed).
+4. The grid is displayed after each turn to show the current state of the game.
+5. The game ends when all 16 scoring spots are filled.
+6. The final score is calculated based on the rows and columns of cards in the grid.
+
+Scoring Rules
+- Blackjack (2 cards that sum to 21): 10 points
+- Sum of 21 (3-5 cards): 7 points
+- Sum of 20: 5 points
+- Sum of 19: 4 points
+- Sum of 18: 3 points
+- Sum of 17: 2 points
+- Sum of 16 or less: 1 point
+- Bust (sum exceeds 21): 0 points
+
+Project Files
+- Card.java: Represents a single card with rank and suit.
+- Deck.java: Represents a deck of cards, handles shuffling and drawing.
+- BlackjackSolitaire.java: The main game logic, including grid management, user interaction, and scoring.
+- BlackjackSolitaireRunner.java: Runs the game.
+
+How to Run
+1. Compile all Java files:
+   javac *.java
+2. Run the game:
+   java BlackjackSolitaireRunner
+
